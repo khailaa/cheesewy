@@ -44,7 +44,7 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
+        <!-- Sidebar --> baruuu
         <div class="sidebar">
             <h2 style="color: #ffffff;">CHEESYWAY</h2>
             <p><a href="menu.php" style="color: #eeebe8;">DASHBOARD</a></p>
