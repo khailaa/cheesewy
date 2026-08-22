@@ -12,7 +12,7 @@ $nama_kasir = $_SESSION['nama_kasir'] ?? 'Kasir';
     <meta charset="UTF-8">
     <title>CheesyWay - Dashboard Kasir</title>
     <style>
-        body { background-color: #4a7c7d; font-family: 'Segoe UI', sans-serif; margin: 20px; }
+        body { background-color: #3b2e22; font-family: 'Segoe UI', sans-serif; margin: 20px; }
         .container { background: #e3d5d5; border-radius: 20px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
         .header h2 { color: #4a3e3e; margin: 0; }

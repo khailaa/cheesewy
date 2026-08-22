@@ -1,13 +1,13 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = ""; 
-$db = "cheesyway";
+$pass = "";
+$db   = "cheesyway"; // sesuaikan nama database lokalmu
 
-$conn = new mysqli($host, $user, $pass, $db);
+// Ubah $koneksi menjadi $conn agar sesuai dengan file lain
+$conn = mysqli_connect($host, $user, $pass, $db);
 
-if ($conn->connect_error) {
-    die("koneksi gagal: " .
-$conn->connect_error);
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
