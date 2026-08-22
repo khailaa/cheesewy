@@ -1,5 +1,6 @@
 <?php
 session_start();
+/**@var mysqli $conn */
 include '../koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
