@@ -19,7 +19,7 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
         .sidebar a { text-decoration: none; color: #6e5449; font-weight: bold; }
         .sidebar p { margin-top: 15px; }
         .main { flex: 1; }
-        .cart { width: 280px; background: #dcd0d0; padding: 20px; border-radius: 15px; display: flex; flex-direction: column; justify-content: space-between; }
+        .cart { width: 280px; background: #d8ba78; padding: 20px; border-radius: 15px; display: flex; flex-direction: column; justify-content: space-between; }
         .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 25px; }
         
         /* Layout Card Menu dengan Gambar */
@@ -36,7 +36,7 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
         .btn-plus { background-color: #2ecc71; }
         .qty-num { font-size: 13px; font-weight: bold; width: 14px; text-align: center; }
         
-        .buy-btn { width: 100%; padding: 12px; background: #2ecc71; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 15px; margin-top: 15px; }
+        .buy-btn { width: 100%; padding: 12px; background: #3d84a5; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 15px; margin-top: 15px; }
         .buy-btn:hover { background: #27ae60; }
         .radio-group { margin: 15px 0; font-size: 13px; font-weight: 500; color: #444; }
         .radio-group label { display: block; margin-bottom: 6px; cursor: pointer; }
@@ -44,7 +44,7 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar --> baruuu
+        <!-- Sidebar --> 
         <div class="sidebar">
             <h2 style="color: #ffffff;">CHEESYWAY</h2>
             <p><a href="menu.php" style="color: #eeebe8;">DASHBOARD</a></p>
@@ -97,12 +97,12 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
             <div>
                 <h3 style="margin-top: 0; color: #333; font-size: 18px;">Ringkasan Pemesanan</h3>
                 <div id="cart-items" style="max-height: 220px; overflow-y: auto;">
-                    <small style="color: #777;">Belum ada menu yang dipilih.</small>
+                    <small style="color: #5e5034;">Belum ada menu yang dipilih.</small>
                 </div>
             </div>
 
             <div>
-                <hr style="border: none; border-top: 1px solid #bbb; margin: 15px 0;">
+                <hr style="border: none; border-top: 1px solid #534532; margin: 15px 0;">
                 <div class="radio-group">
                     <label><input type="radio" name="pay" value="Kasir" checked> BAYAR DI KASIR</label>
                     <label><input type="radio" name="pay" value="QRIS"> TRANSFER / QRIS</label>
