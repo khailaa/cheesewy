@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2026 at 08:05 AM
+-- Generation Time: Aug 22, 2026 at 01:54 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -56,7 +56,8 @@ INSERT INTO `detail_pesanan` (`id`, `pesanan_id`, `menu_id`, `jumlah`) VALUES
 (13, 8, 2, 1),
 (14, 8, 3, 1),
 (15, 9, 1, 1),
-(16, 9, 3, 1);
+(16, 9, 3, 1),
+(17, 10, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -76,9 +77,9 @@ CREATE TABLE `kasir` (
 --
 
 INSERT INTO `kasir` (`id`, `username`, `password`, `nama_lengkap`) VALUES
-(1, 'khaila', '-3', 'khaila');
-INSERT INTO `kasir` (`id`, `username`, `password`, `nama_lengkap`) VALUES
-(2, 'admin02', '12345', 'gilang maulana');
+(1, 'kasir01', '12345', 'khaila'),
+(4, 'kasir02', '2233', 'gilang maulana'),
+(5, 'kasir03', '1122', 'azka');
 
 -- --------------------------------------------------------
 
@@ -134,7 +135,8 @@ INSERT INTO `pesanan` (`id`, `nama_pelanggan`, `no_meja`, `metode_pembayaran`, `
 (6, 'haikal', '01', 'Kasir', 19000, '', '2026-08-22 05:21:33'),
 (7, 'nazla', '01', 'Kasir', 22000, '', '2026-08-22 05:33:43'),
 (8, 'indah', '06', 'Kasir', 27000, '', '2026-08-22 05:46:25'),
-(9, 'haikal', '10', 'QRIS', 30000, '', '2026-08-22 05:48:34');
+(9, 'haikal', '10', 'QRIS', 30000, '', '2026-08-22 05:48:34'),
+(10, 'yohan', '06', 'Kasir', 7000, '', '2026-08-22 08:58:32');
 
 -- --------------------------------------------------------
 
@@ -158,7 +160,8 @@ INSERT INTO `ulasan` (`id`, `nama_pelanggan`, `rating`, `komentar`, `created_at`
 (1, 'windah', 5, 'enakk', '2026-08-22 04:49:07'),
 (2, 'windah', 5, 'enakk', '2026-08-22 05:10:41'),
 (3, 'haikal', 3, 'ga enakk\r\n', '2026-08-22 05:52:41'),
-(4, 'haikal', 3, 'ga enakk\r\n', '2026-08-22 05:52:49');
+(4, 'haikal', 3, 'ga enakk\r\n', '2026-08-22 05:52:49'),
+(5, 'haikal', 3, 'ga enakk\r\n', '2026-08-22 08:56:40');
 
 --
 -- Indexes for dumped tables
@@ -205,13 +208,13 @@ ALTER TABLE `ulasan`
 -- AUTO_INCREMENT for table `detail_pesanan`
 --
 ALTER TABLE `detail_pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `kasir`
 --
 ALTER TABLE `kasir`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `menu`
@@ -223,13 +226,13 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `ulasan`
 --
 ALTER TABLE `ulasan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
