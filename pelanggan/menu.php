@@ -12,9 +12,9 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
     <meta charset="UTF-8">
     <title>CheesyWay - Menu Pelanggan</title>
     <style>
-        body { background-color: #4a7c7d; font-family: 'Segoe UI', sans-serif; margin: 20px; }
-        .container { background: #e3d5d5; border-radius: 20px; padding: 25px; display: flex; gap: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-        .sidebar { width: 180px; background: #cbb9ba; padding: 20px; border-radius: 15px; }
+        body { background-color: #ac936f; font-family: 'Segoe UI', sans-serif; margin: 20px; }
+        .container { background: #f8d593; border-radius: 20px; padding: 25px; display: flex; gap: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .sidebar { width: 180px; background: #806b40; padding: 20px; border-radius: 15px; }
         .sidebar h2 { margin-top: 0; font-size: 20px; color: #4a3e3e; }
         .sidebar a { text-decoration: none; color: #6e5449; font-weight: bold; }
         .sidebar p { margin-top: 15px; }
@@ -46,14 +46,14 @@ $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
-            <h2>CHEESYWAY</h2>
-            <p><a href="menu.php" style="color: #000;">DASHBOARD</a></p>
-            <p><a href="reviews.php">REVIEWS</a></p>
+            <h2 style="color: #ffffff;">CHEESYWAY</h2>
+            <p><a href="menu.php" style="color: #eeebe8;">DASHBOARD</a></p>
+            <p><a href="reviews.php" style="color: #e4e0da;">REVIEWS</a></p>
         </div>
 
         <!-- Main Content -->
         <div class="main">
-            <h3 style="color: #4a3e3e; margin-top: 0;">MAKANAN</h3>
+            <h3 style="color: #5f5132; margin-top: 0;">MAKANAN</h3>
             <div class="grid">
                 <?php while($row = $makanan->fetch_assoc()): 
                     $img_path = "../img/" . $row['gambar'];
