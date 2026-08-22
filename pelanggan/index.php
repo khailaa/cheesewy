@@ -63,7 +63,7 @@ if (isset($_POST['masuk'])) {
 
     /* Kartu Utama Login */
     .card {
-      background-color: #6d5b3b; /* Warna cokelat emas karton */
+      background-color: #927b51e5; /* Warna cokelat emas karton */
       width: 800px;
       max-width: 90%;
       border-radius: 25px;
