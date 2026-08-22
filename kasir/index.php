@@ -38,14 +38,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>CheesyWay - Login Kasir</title>
     <style>
-        body { background-color: #4a7c7d; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .login-card { background: #5d4841; padding: 40px 35px; border-radius: 25px; width: 320px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); text-align: center; }
-        .login-card h2 { color: #ffffff; margin-bottom: 25px; font-size: 24px; letter-spacing: 2px; border-bottom: 2px solid #ffffff; display: inline-block; padding-bottom: 5px; }
+        body { background-color: #3b2e22; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-card { background: #584c35e5 ; padding: 40px 35px; border-radius: 25px; width: 320px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); text-align: center; }
+        .login-card h2 { color: #fcf9f9; margin-bottom: 25px; font-size: 24px; letter-spacing: 2px; border-bottom: 2px solid #ffffff; display: inline-block; padding-bottom: 5px; }
         .input-group { margin-bottom: 18px; text-align: left; }
         .input-group label { display: block; color: #ffffff; font-weight: bold; font-size: 13px; margin-bottom: 5px; }
-        .input-group input { width: 100%; padding: 10px 15px; border-radius: 20px; border: none; background: #a39287; color: #ffffff; font-size: 14px; box-sizing: border-box; outline: none; }
-        .btn-login { width: 100%; padding: 10px; border-radius: 20px; border: none; background: #a39287; color: #ffffff; font-weight: bold; font-size: 16px; cursor: pointer; margin-top: 15px; }
-        .btn-login:hover { background: #8c7b70; }
+        .input-group input { width: 100%; padding: 10px 15px; border-radius: 20px; border: none; background: #995d2c; color: #ffffff; font-size: 14px; box-sizing: border-box; outline: none; }
+        .btn-login { width: 100%; padding: 10px; border-radius: 20px; border: none; background: #FFBA08; color: #ffffff; font-weight: bold; font-size: 16px; cursor: pointer; margin-top: 15px; }
+        .btn-login:hover { background: #f8efea; }
         .error-msg { color: #ff6b6b; font-size: 13px; margin-bottom: 15px; }
     </style>
 </head>

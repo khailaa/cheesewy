@@ -77,6 +77,7 @@ CREATE TABLE `kasir` (
 
 INSERT INTO `kasir` (`id`, `username`, `password`, `nama_lengkap`) VALUES
 (1, 'khaila', '-3', 'khaila');
+(2, 'admin02', '12345', 'gilang maulana');
 
 -- --------------------------------------------------------
 
