@@ -1,9 +1,19 @@
 <?php
 session_start();
-require_once '../koneksi.php';
-/**@var mysqli $conn */
-if (!isset($_SESSION['nama'])) { header("Location: index.php"); exit(); }
 
+// 1. Sertakan file koneksi (koneksi.php ada di luar folder pelanggan)
+require_once '../koneksi.php';
+
+/** @var mysqli $conn */ // Memberi tahu editor bahwa $conn berasal dari koneksi.php
+
+// 2. Cek apakah session login pelanggan ada
+if (!isset($_SESSION['nama']) || empty($_SESSION['nama'])) {
+    // Jika belum login / session kosong, kembalikan ke index.php
+    header("Location: index.php");
+    exit();
+}
+
+// 3. Query data menu
 $makanan = $conn->query("SELECT * FROM menu WHERE kategori='Makanan'");
 $minuman = $conn->query("SELECT * FROM menu WHERE kategori='Minuman'");
 ?>

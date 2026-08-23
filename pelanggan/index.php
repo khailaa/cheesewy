@@ -11,7 +11,7 @@ if (isset($_POST['masuk'])) {
     $antri = $_POST['no_antri'];
 
     if (!empty($nama) && !empty($meja)) {
-        $_SESSION['pelanggan'] = $nama;
+        $_SESSION['nama'] = $nama;
         $_SESSION['no_meja'] = $meja;
         $_SESSION['no_antri'] = $antri;
         header("Location: menu.php");
