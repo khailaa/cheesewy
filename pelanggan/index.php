@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../koneksi.php';
+require_once '../koneksi.php';
 
 // Menangkap parameter meja dari URL jika ada (contoh: index.php?meja=06)
 $no_meja_url = isset($_GET['meja']) ? $_GET['meja'] : '';
@@ -201,10 +201,10 @@ if (isset($_POST['masuk'])) {
           <input type="text" name="no_meja" value="<?= htmlspecialchars($no_meja_url); ?>" placeholder="NO MEJA :" required>
         </div>
 
-       
-
         <button type="submit" name="masuk" class="btn-submit">MASUK & PESAN</button>
+
       </form>
+      
     </div>
   </div>
 

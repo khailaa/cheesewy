@@ -1,7 +1,7 @@
 <?php
 session_start();
-
-include '../koneksi.php';
+require_once '../koneksi.php';
+/**@var mysqli $conn */
 if (!isset($_SESSION['nama'])) { header("Location: index.php"); exit(); }
 
 $makanan = $conn->query("SELECT * FROM menu WHERE kategori='Makanan'");
