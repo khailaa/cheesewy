@@ -1,6 +1,6 @@
 <?php
 session_start();
-/**@var mysqli $conn */
+
 include '../koneksi.php';
 if (!isset($_SESSION['nama'])) { header("Location: index.php"); exit(); }
 
