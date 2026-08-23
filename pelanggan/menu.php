@@ -196,15 +196,21 @@ function submitOrder() {
     })
     .then(res => res.json())
     .then(data => {
-        if(data.success) {
+        // Cek apakah PHP mengirim status 'success' atau 'status' bernilai true
+        if (data.status === 'success' || data.success === true) {
             alert('Pesanan berhasil dikirim!');
-            cart = {};
-            renderCart();
+            cart = {};          // Kosongkan keranjang
+            renderCart();       // Refresh tampilan keranjang
         } else {
-            alert('Gagal mengirim pesanan. Silakan coba lagi.');
+            // Tampilkan pesan error asli dari PHP jika ada
+            alert(data.message || 'Gagal mengirim pesanan. Silakan coba lagi.');
         }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Terjadi kesalahan koneksi ke server.');
     });
-}
+ }
 </script>
 </body>
 </html>

@@ -20,9 +20,9 @@ $reviews = $conn->query("SELECT * FROM ulasan ORDER BY created_at DESC");
     <meta charset="UTF-8">
     <title>CheesyWay - Reviews</title>
     <style>
-        body { background-color: #4a7c7d; font-family: sans-serif; margin: 20px; }
-        .container { background: #e3d5d5; border-radius: 20px; padding: 20px; display: flex; gap: 20px; }
-        .sidebar { width: 200px; background: #cbb9ba; padding: 15px; border-radius: 15px; }
+        body { background-color: #9b8969; font-family: sans-serif; margin: 20px; }
+        .container { background: #f8d593; border-radius: 20px; padding: 20px; display: flex; gap: 20px; }
+        .sidebar { width: 200px; background: #806b40; padding: 15px; border-radius: 15px; }
         .main { flex: 1; }
         .review-card { background: white; padding: 10px; margin-bottom: 10px; border-radius: 10px; }
     </style>
@@ -30,9 +30,9 @@ $reviews = $conn->query("SELECT * FROM ulasan ORDER BY created_at DESC");
 <body>
     <div class="container">
         <div class="sidebar">
-            <h3>CHEESYWAY</h3>
-            <b><a href="menu.php" style="color: #000;">MENU</a></b>
-            <p><b>REVIEWS</b></p>
+            <h3 style="color: #f5f3f3">CHEESYWAY</h3>
+            <b><a href="menu.php" style="color: #f5f3f3;">MENU</a></b>
+            <p><b style="color: #f5f3f3"> REVIEWS</b></p>
         </div>
         <div class="main">
             <h3>Beri Ulasan Kamu</h3>
